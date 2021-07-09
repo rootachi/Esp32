@@ -4,7 +4,7 @@ const path = require("path");
 const app = express();
 let led1 = false;
 let led2 = false;
-let locked = false;
+let locked = true;
 //Middleware to set a static directory
 app.use(express.static(path.join(__dirname, "public")));
 /*
